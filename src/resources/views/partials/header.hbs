@@ -1,0 +1,47 @@
+<!--navbar-->
+<header class="header">
+  <div class="container">
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <a class="navbar-brand" href="/">
+        <span class="navbar-brand-text">DEADLINE</span>
+        <span class="navbar-brand-desc">X</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link hover-primary" href="/">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-primary" href="/sum">Cộng 2 số</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hover-primary" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Công việc của tôi
+            </a>
+            <div class="dropdown-menu mega-menu--style" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item hover-primary" href="/todo">Danh sách công việc</a>
+              <a class="dropdown-item hover-primary" href="/todo/create">Thêm công việc</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item hover-primary">
+            {{#if user}}
+            <a class="nav-link hover-primary" href="/me/logout">Đăng xuất</a>
+            {{else}}
+            <a class="nav-link hover-primary" href="/me/login">Đăng nhập</a>
+            {{/if}}
+          </li>
+          <span class="btn button-color"> {{#if user}} {{user.displayName}} {{else}} User Name {{/if}}</span>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--/navbar-->
