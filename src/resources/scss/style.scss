@@ -1,0 +1,39 @@
+@import "variables";
+
+// style for header
+.header {
+  background-color: $nav-color;
+  .navbar {
+    padding: 0.5rem 0.5rem;
+    &-brand {
+      font-size: 1.6rem;
+      font-weight: 700;
+      &-text {
+        color: $brand-color;
+      }
+      &-desc {
+        color: $button-color;
+      }
+    }
+    &-nav {
+      .mega-menu--style {
+        background-color: $nav-color;
+        opacity: 0.9;
+        margin-top: 1rem;
+        & a {
+          color: $white-color;
+        }
+      }
+      .nav-item {
+        font-size: 1rem;
+        font-weight: 500;
+        .hover-primary:hover {
+          color: $brand-color;
+        }
+        a {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}

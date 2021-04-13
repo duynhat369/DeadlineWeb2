@@ -1,0 +1,27 @@
+.footer {
+  background-color: #121212;
+}
+.footer h6,
+.footer p,
+.footer a,
+.footer span,
+.footer i,
+.footer small {
+  color: #ffffff;
+}
+.footer .text-muted-white {
+  opacity: 0.5;
+}
+.footer .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.footer .navbar-brand-text {
+  color: #bb86fc;
+}
+.footer .navbar-brand-desc {
+  color: #ff0266;
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=footer.css.map */

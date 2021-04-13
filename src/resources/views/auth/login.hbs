@@ -1,0 +1,43 @@
+<div class="login mt-4 mb-4">
+  <div class="container">
+    <h2 class="title-header mt-4 mb-4">{{title}}</h2>
+    <div class="row justify-content-center py-5">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="login-image mt-4 mb-4">
+          <img class="login-image-style" src="/svg/sign-in.svg" alt="svg login">
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 flex-space-around">
+        <div class="login-form mt-4 mb-4">
+          <h2 class="login-form-title">Hello,</h2>
+          <h2 class="login-form-title mb-4">Welcome back !</h2>
+          <form method="POST">
+            <div class="form-group">
+              <label for="inputLoginName">User name</label>
+              <input name="inputLoginName" type="text" class="form-control" id="inputLoginName"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="inputLoginPassword">Password</label>
+              <input name="inputLoginPassword" type="password" class="form-control" id="inputLoginPassword"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="login-form-button">
+              <button type="submit" class="btn button-color">Sign in</button>
+            </div>
+            <div class="login-form-forgotPass mt-2">
+              <a href="#">Forgot your password?</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="no-acc mt-4 mb-4">
+          Don't have an account?
+          <a href="/auth/sign-up" class="signUp">Sign Up
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+@import "variables";
+
+.footer {
+  h6,
+  p,
+  a,
+  span,
+  i,
+  small {
+    color: $white-color;
+  }
+
+  .text-muted-white {
+    opacity: 0.5;
+  }
+
+  background-color: $nav-color;
+
+  .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+    &-text {
+      color: $brand-color;
+    }
+    &-desc {
+      color: $button-color;
+      font-size: 3rem;
+    }
+  }
+}

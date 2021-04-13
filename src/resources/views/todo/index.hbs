@@ -1,76 +1,38 @@
-<div class="mt-4">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">STT</th>
-        <th scope="col">Tên Todo</th>
-        <th scope="col">Mô tả</th>
-        <th scope="col">Ngày tạo</th>
-        <th scope="col" colspan="4">Trang thái</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each todoView}}
-      <tr>
-        <th scope="row">{{sum @index 1}}</th>
-        <td>{{this.todoName}}</td>
-        <td>{{this.todoDes}}</td>
-        <td>{{this.createdAt}}</td>
-        <td>{{this.todoStatus}}</td>
-        <td>
-          <a href="/course/{{this._id}}/edit" class="btn btn--color-s">sửa</a>
-          <a href="" class="btn btn--color" data-toggle="modal" data-id="{{this._id}}"
-            data-target="#exampleModal">xóa</a>
-        </td>
-      </tr>
-      {{/each}}
-    </tbody>
-  </table>
+<div class="mt-4 mb-4">
+  <div class="container">
+    <h2 class="title-header mt-4 mb-4">{{title}}</h2>
+    <div class="row justify-content-center">
+      <div class="col col-sm-12 col-md-12 col-lg-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">Tên công việc</th>
+              <th scope="col">Ghi chú cho công việc</th>
+              <th scope="col" colspan="3">Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each showTodoList}}
+            <tr>
+              <th scope="row">{{sum @index 1}}</th>
+              <td>{{this.name}}</td>
+              <td>{{this.des}}</td>
+              <td> Chưa hoàn thành</td>
+              <td><a href="#">Done</a></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-  <a class="p-4" href="/course/create">Thêm khóa học</a>
-  <a class="p-4" href="/me/trash/courses">Đã xóa gần đây</a </div>
-
-  <!-- dialog confirm delete course button -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">Xóa khóa học</h2>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Bạn chắc chắn muốn xóa khóa học này?</p>
-        </div>
-        <div class="modal-footer">
-          <button id="btn-del-course" type="button" class="btn btn--color">Delete</button>
-          <button type="button" class="btn btn--color-s" data-dismiss="modal">Close</button>
+    <div class="row justify-content-center">
+      <div class="col col-sm-12 col-md-12 col-lg-12">
+        <div class="button-create-new">
+          <a class="btn button-color" href="/me/create/todo">+</a>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- delete course hidden form -->
-  <form name="delete-course-form" method="POST"></form>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var courseID;
-      var deleteForm = document.forms['delete-course-form']
-      var btnDelCourse = document.getElementById("btn-del-course")
-
-      //when dialog confirm clicked
-      $('#exampleModal').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget)
-        courseID = button.data('id')
-      })
-
-      //when click sure delete btn
-      btnDelCourse.onclick = function () {
-        deleteForm.action = "/course/" + courseID + "?_method=DELETE";
-        deleteForm.submit()
-      }
-    })
-  </script>
+</div>

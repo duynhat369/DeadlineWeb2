@@ -1,0 +1,49 @@
+<div class="sign-up mt-4 mb-4">
+  <div class="container">
+    <h2 class="title-header mt-4 mb-4">{{title}}</h2>
+    <div class="row justify-content-center py-5">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="sign-up-image mt-4 mb-4">
+          <img class="sign-up-image-style" src="/svg/welcome.svg" alt="svg sign-up">
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 flex-space-around">
+        <div class="sign-up-form mt-4 mb-4">
+          <h2 class="sign-up-form-title mb-4">Sign Up</h2>
+          <form method="POST">
+            <div class="form-group">
+              <label for="inputsign-upName">What is your name?</label>
+              <input name="inputsign-upName" type="text" class="form-control" id="inputsign-upName"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="inputsign-upName">User name</label>
+              <input name="inputsign-upName" type="text" class="form-control" id="inputsign-upName"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="inputsign-upPassword">Password</label>
+              <input name="inputsign-upPassword" type="password" class="form-control" id="inputsign-upPassword"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="inputsign-upPassword">Confirm Password</label>
+              <input name="inputsign-upPassword" type="password" class="form-control" id="inputsign-upPassword"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="sign-up-form-button">
+              <button type="submit" class="btn button-color">Sign up</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="already-acc mt-4 mb-4">
+          Already have an account?
+          <a href="/auth/login" class="signUp">Sign In
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

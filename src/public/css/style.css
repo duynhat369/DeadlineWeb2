@@ -1,0 +1,36 @@
+.header {
+  background-color: #121212;
+}
+.header .navbar {
+  padding: 0.5rem 0.5rem;
+}
+.header .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.header .navbar-brand-text {
+  color: #bb86fc;
+}
+.header .navbar-brand-desc {
+  color: #ff0266;
+}
+.header .navbar-nav .mega-menu--style {
+  background-color: #121212;
+  opacity: 0.9;
+  margin-top: 1rem;
+}
+.header .navbar-nav .mega-menu--style a {
+  color: #ffffff;
+}
+.header .navbar-nav .nav-item {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.header .navbar-nav .nav-item .hover-primary:hover {
+  color: #bb86fc;
+}
+.header .navbar-nav .nav-item a {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

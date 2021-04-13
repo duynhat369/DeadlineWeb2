@@ -4,6 +4,11 @@ class SiteController {
     res.render("home");
   }
 
+  mailer(req, res) {
+    res.locals.title = "Trang chủ";
+    res.render("mailer");
+  }
+
   //[GET] /sum
   sumForm(req, res) {
     res.locals.title = "Cộng hai số";

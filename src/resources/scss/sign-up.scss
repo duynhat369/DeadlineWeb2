@@ -1,0 +1,42 @@
+@import "variables";
+
+.sign-up {
+  &-image {
+    width: 100%;
+    height: 100%;
+    &-style {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .flex-space-around {
+    @include flex(column, flex-start, space-around, nowrap);
+    .already-acc {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .signUp {
+      color: $brand-color;
+      padding: 0 0.5rem;
+    }
+  }
+
+  .sign-up-form {
+    width: 100%;
+    &-title {
+      color: $brand-color;
+    }
+    &-button button {
+      width: 100%;
+    }
+
+    .form-group input {
+      border-color: $button-color;
+    }
+    .form-group input:focus {
+      box-shadow: none;
+    }
+  }
+}

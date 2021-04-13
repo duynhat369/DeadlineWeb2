@@ -1,0 +1,6 @@
+@import "variables";
+
+.button-create-new {
+  width: 100%;
+  @include flex(column, flex-end, space-between, nowrap);
+}

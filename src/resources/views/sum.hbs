@@ -1,0 +1,34 @@
+<div class="sum-number mt-4 mb-4">
+  <div class="container">
+    <h2 class="title-header mt-4 mb-4">{{title}}</h2>
+    <div class="row">
+      <div class="col col-sm-12 col-md-6 col-lg-6">
+        <form method="POST">
+          <div class="form-group">
+            <label for="number1">Số thứ 1</label>
+            <input class="form-control" type="number" id="number1" name="number1" {{#if result}}
+              placeholder="{{number1}}" {{else}} placeholder="Số thứ nhất" {{/if}}>
+          </div>
+          <div class="form-group">
+            <label for="number2">Số thứ 2</label>
+            <input class="form-control" type="number" id="number2" name="number2" {{#if result}}
+              placeholder="{{number2}}" {{else}} placeholder="Số thứ hai" {{/if}}>
+          </div>
+          <div class="mb-2" id="resultForm">
+            {{#if result}}
+            <p>Kết quả là: {{result}}</p>
+            {{/if}}
+          </div>
+          <button type="submit" class="btn button-color">
+            Tính tổng
+          </button>
+        </form>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-6">
+        <div class="login-image mt-4 mb-4">
+          <img class="login-image-style" src="/svg/calculator.svg" alt="svg calculator">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

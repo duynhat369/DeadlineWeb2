@@ -1,0 +1,18 @@
+$brand-color: #bb86fc;
+$button-color: #ff0266;
+$text-color: #4b4b4b;
+$nav-color: #121212;
+$white-color: #ffffff;
+
+@mixin flex(
+  $flow: column,
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-flow: $flow;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}

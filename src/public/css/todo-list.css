@@ -1,0 +1,10 @@
+.button-create-new {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/*# sourceMappingURL=todo-list.css.map */
