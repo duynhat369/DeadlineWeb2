@@ -16,7 +16,7 @@ class AuthController {
   loginPost(req, res, next) {
     const username = req.body.inputLoginName;
     const password = req.body.inputLoginPassword;
-    userModel
+    Auths
       .findByUserName(username)
       .then(function (found) {
         if (found && found.password === password) {
