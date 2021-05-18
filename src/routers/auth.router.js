@@ -8,5 +8,7 @@ router.get("/sign-up", authController.register);
 router.get("/login", authController.login);
 router.post("/login", authController.loginPost);
 router.get("/logout", authController.logout);
+router.get("/admin/management", authController.management);
+router.get("/admin/dashboard", authController.dashboard);
 
 module.exports = router;

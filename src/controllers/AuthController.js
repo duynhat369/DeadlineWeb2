@@ -12,6 +12,16 @@ class AuthController {
     res.locals.title = "Login Page";
     res.render("auth/login");
   }
+  //[GET] /auth/login
+  dashboard(req, res) {
+    res.locals.title = "Dashboard";
+    res.render("auth/admin/dashboard");
+  }
+  //[GET] /auth/login
+  management(req, res) {
+    res.locals.title = "Quản lý hội nghị";
+    res.render("auth/admin/management");
+  }
   //[POST] /auth/login
   loginPost(req, res, next) {
     const username = req.body.inputLoginName;

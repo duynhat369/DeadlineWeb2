@@ -1,310 +1,3 @@
-@charset "UTF-8";
-.login-image {
-  width: 100%;
-  height: 100%;
-}
-.login-image-style {
-  width: 100%;
-  height: 100%;
-}
-.login .flex-space-around {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-}
-.login .flex-space-around .no-acc {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.login .flex-space-around .signUp {
-  color: #bb86fc;
-  padding: 0 0.5rem;
-}
-.login .login-form {
-  width: 100%;
-}
-.login .login-form-title {
-  color: #bb86fc;
-}
-.login .login-form-button button {
-  width: 100%;
-}
-.login .login-form-forgotPass {
-  display: flex;
-  flex-flow: row;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-}
-.login .login-form-forgotPass a {
-  color: #ff0266;
-}
-.login .login-form .form-group input {
-  border-color: #ff0266;
-}
-.login .login-form .form-group input:focus {
-  box-shadow: none;
-}
-
-.sign-up-image {
-  width: 100%;
-  height: 100%;
-}
-.sign-up-image-style {
-  width: 100%;
-  height: 100%;
-}
-.sign-up .flex-space-around {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-}
-.sign-up .flex-space-around .already-acc {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.sign-up .flex-space-around .signUp {
-  color: #bb86fc;
-  padding: 0 0.5rem;
-}
-.sign-up .sign-up-form {
-  width: 100%;
-}
-.sign-up .sign-up-form-title {
-  color: #bb86fc;
-}
-.sign-up .sign-up-form-button button {
-  width: 100%;
-}
-.sign-up .sign-up-form .form-group input {
-  border-color: #ff0266;
-}
-.sign-up .sign-up-form .form-group input:focus {
-  box-shadow: none;
-}
-
-.sum-number form {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.sum-number form .form-group {
-  width: 100%;
-}
-
-.footer {
-  background-color: #121212;
-}
-.footer h6,
-.footer p,
-.footer a,
-.footer span,
-.footer i,
-.footer small {
-  color: #ffffff;
-}
-.footer .text-muted-white {
-  opacity: 0.5;
-}
-.footer .navbar-brand {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-.footer .navbar-brand-text {
-  color: #bb86fc;
-}
-.footer .navbar-brand-desc {
-  color: #ff0266;
-  font-size: 3rem;
-}
-
-.button-create-new {
-  width: 100%;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-h1 {
-  font-size: 2.2rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-size: 1.6rem;
-}
-
-h4 {
-  font-size: 1.4rem;
-}
-
-h5 {
-  font-size: 1.2rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 #sidebar-wrapper {
   z-index: 1000;
   height: 100%;
@@ -362,7 +55,12 @@ p {
 
 .navbar-nav > li > a.active {
   color: #e9ecef !important;
-  background: linear-gradient(90deg, rgba(59, 125, 221, 0.1), rgba(59, 125, 221, 0.0875) 50%, transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 125, 221, 0.1),
+    rgba(59, 125, 221, 0.0875) 50%,
+    transparent
+  );
   border-left: 4px solid #3b7ddd;
 }
 
@@ -373,7 +71,7 @@ p {
 .navbar-nav .has-sub > a.collapsed::after {
   color: gray;
   font-size: 10px;
-  content: "";
+  content: "\f078";
 }
 
 .navbar-nav .has-sub > a.collapsed::after {
@@ -389,8 +87,8 @@ p {
   text-align: center;
   color: gray;
   display: block;
-  content: "";
-  font-family: "Font Awesome 5 Free";
+  content: "\f077";
+  font-family: "Font Awesome\ 5 Free";
   font-weight: 900;
   font-size: 13px;
   line-height: 30px;
@@ -432,9 +130,11 @@ p {
 /*---------------------------------
 sidebar
 ----------------------*/
+
 /*---------------------------------
 main-content
 ----------------------*/
+
 #page-content-wrapper {
   width: 100%;
   transition: all 0.5s ease;
@@ -443,6 +143,7 @@ main-content
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
   margin-right: -270px;
+
   transition: all 0.5s ease;
 }
 
@@ -456,12 +157,15 @@ main-content
     width: calc(100% - 270px);
   }
 }
+
 /*---------------------------------
 main-content
 ----------------------*/
+
 /*---------------------------------
 cross-bar animation
 ----------------------*/
+
 .nav-icon1 {
   z-index: 999;
   position: relative;
@@ -523,6 +227,7 @@ cross-bar animation
 /*---------------------------------
 cross-bar animation
 ----------------------*/
+
 /*---------------------------------
 header navbar design
 ----------------------*/
@@ -614,9 +319,11 @@ header navbar design
 /*---------------------------------
 header navbar design
 ----------------------*/
+
 /*---------------------------------
 main-top card
 ----------------------*/
+
 .card {
   margin-bottom: 24px;
   border: none;
@@ -666,9 +373,11 @@ main-top card
 /*---------------------------------
 main-top card
 ----------------------*/
+
 /*---------------------------------
 main-table
 ----------------------*/
+
 .m-r-10 {
   margin-right: 10px;
 }
@@ -735,39 +444,3 @@ main-table
 /*---------------------------------
 main-table
 ----------------------*/
-.header {
-  background-color: #121212;
-}
-.header .navbar {
-  padding: 0.5rem 0.5rem;
-}
-.header .navbar-brand {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-.header .navbar-brand-text {
-  color: #bb86fc;
-}
-.header .navbar-brand-desc {
-  color: #ff0266;
-}
-.header .navbar-nav .mega-menu--style {
-  background-color: #121212;
-  opacity: 0.9;
-  margin-top: 1rem;
-}
-.header .navbar-nav .mega-menu--style a {
-  color: #ffffff;
-}
-.header .navbar-nav .nav-item {
-  font-size: 1rem;
-  font-weight: 500;
-}
-.header .navbar-nav .nav-item .hover-primary:hover {
-  color: #bb86fc;
-}
-.header .navbar-nav .nav-item a {
-  color: #ffffff;
-}
-
-/*# sourceMappingURL=style.css.map */
