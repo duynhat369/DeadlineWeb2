@@ -48,6 +48,50 @@
 .login .login-form .form-group input:focus {
   box-shadow: none;
 }
+.login .login-form .login-media {
+  width: 100%;
+}
+.login .login-form .login-media-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.login .login-form .login-media-text::before {
+  content: "";
+  border: 1px solid #bb86fc;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.login .login-form .login-media-text::after {
+  content: "";
+  border: 1px solid #bb86fc;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.login .login-form .login-media-facebook {
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #0058bd;
+}
+.login .login-form .login-media-facebook a {
+  width: 100%;
+}
+.login .login-form .login-media-google {
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #008d2f;
+}
+.login .login-form .login-media-google a {
+  width: 100%;
+}
 
 .sign-up-image {
   width: 100%;
